@@ -28,7 +28,7 @@ def parse_args():
     parser.add_argument(
         "--model-dir",
         type=str,
-        default=os.environ["SM_MODEL_DIR"],
+        default=os.environ.get("SM_MODEL_DIR"),
         help="Local directory to save the model",
     )
 
