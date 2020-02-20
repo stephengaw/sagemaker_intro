@@ -4,7 +4,7 @@ import os
 
 
 # Create dummy classification data
-x_data, y_data = make_classification(n_samples=10000, n_features=20, n_classes=2)
+x_data, y_data = make_classification(n_samples=10000, n_features=20, n_classes=2, class_sep=0.5)
 
 x_data = pd.DataFrame(x_data)
 y_data = pd.DataFrame(y_data)
